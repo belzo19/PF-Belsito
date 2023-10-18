@@ -99,14 +99,26 @@ footer h4, footer .h4 {
   grid-column: 1/5;
 }
 .divfooter .iconos-footer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   justify-content: center;
+}
+@media only screen and (max-width: 850px) {
+  .divfooter .iconos-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 575px) {
   .divfooter {
     display: flex;
     flex-direction: column;
+  }
+  .divfooter .iconos-footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
   }
 }
 
