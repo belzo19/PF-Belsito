@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import './base/variables';
+@import './base/mixins';
+@import './componentes/header';
+@import './componentes/footer';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $claro;
+    h1 {
+        padding: 1.25rem;
+    }
+    a {
+        text-decoration: none;
+        color: $claro;
+        &:hover {
+            text-shadow: .0625rem .0625rem .25rem $claro;
+        }
+    }
+    nav {
+        background-color: $dark;
+        color: $claro;
+        margin: 0;
+        padding: .3125rem;
+    }
+}
+
+.contenedor_inicio {
+    @extend .contenedor;
+    padding-bottom: 1.5625rem;
+}
+.carousel {
+    margin-top: 1.25rem;
+    width: 31.25rem;
+    justify-content: center;
+    box-shadow: 0rem 0rem .625rem $dark;
+    border: .3125rem solid $dark;
+    animation-name: animado;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @include celu {
+        width: 18.75rem;
+    }
+}
+@keyframes animado {
+    0% {box-shadow: 0rem 0rem .625rem $dark; border: .3125rem solid $claro;}
+    25% {box-shadow: 0rem 0rem 2.5rem $dark; border: .3125rem solid $gris;}
+    50% {box-shadow: 0rem 0rem 3.75rem $dark; border: .3125rem solid $dark;}
+    75% {box-shadow: 0rem 0rem 2.5rem $dark; border: .3125rem solid $gris;}
+    100% {box-shadow: 0rem 0rem .625rem $dark; border: .3125rem solid $claro;}
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin-bottom: 1.5625rem;
+    .caja {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: $claro;
+        background-color: $dark;
+        width: 15.625rem;
+        margin: 1.25rem;
+        box-shadow: 0rem 0rem .625rem $dark;
+        border-top-right-radius: 1.5625rem;
+        border-bottom-left-radius: 1.5625rem;
+        &:hover {
+            text-shadow: .0625rem .0625rem .25rem $claro;
+            box-shadow: .0625rem .0625rem .25rem $claro;
+        }
+    }
+    .img-caja {
+        border-top-right-radius: 1.25rem;
+    }
+    .text-caja {
+        color: $claro;
+        margin-top: .625rem;
+    }
+    h2 {
+        color: $claro;
+        font-size: medium;
+    }
+    @include escritorio {
+        grid-template-columns: auto auto auto;
+    }
+    @include tablet {
+        grid-template-columns: auto auto;
+    }
+    @include celu {
+        grid-template-columns: auto;
+    }
+}
+
+#fondoquienes {
+    margin-top: 2.1875rem;
+}
+.quienes {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 35%;
+    margin: 0 auto;
+    padding: 1.25rem;
+    font-size: larger;
+    margin-bottom: 3.125rem;
+    @include escritorio {
+        width: 50%;
+    }
+    @include tablet {
+        width: 65%;
+        font-size: medium;
+    }
+    @include celu {
+        width: 80%;
+        font-size: medium;
+    }
+}
+
+.sesion {
+    margin-top: 10vh;
+}
+
+
+
