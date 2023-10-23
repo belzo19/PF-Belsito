@@ -26,21 +26,23 @@ https://belzo19.github.io/PF-Belsito
 
 ......................................................................................................................................................................
       
-# Aloje el sitio en el hosting infinityfree
+- Aloje el sitio en el hosting infinityfree
  
-# Le asigne un dominio que compre en nic.ar
+- Le asigne un dominio que compre en nic.ar
 
-# Configure página de error 404
+- Instale un certificado SSL de Cloudflare 
+
+- Personalice error 404 para paginas no encontradas
 
 ......................................................................................................................................................................
 
 - Link del sitio -
 
-http://www.rispetto.com.ar
+https://www.rispetto.com.ar
 
-http://www.rispetto.com.ar
+https://www.rispetto.com.ar
 
-http://www.rispetto.com.ar
+https://www.rispetto.com.ar
 
 ......................................................................................................................................................................
 
