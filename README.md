@@ -6,7 +6,7 @@ El mismo fue inspirado en un ecommerce de indumentaria masculina que tuve hace a
 
 ......................................................................................................................................................................
 
-# en el proyecto se encuentran implementados:
+# Se Implemento:
 
 -html 5
 -css
@@ -16,7 +16,7 @@ El mismo fue inspirado en un ecommerce de indumentaria masculina que tuve hace a
 
 ......................................................................................................................................................................
 
-# Los archivos se encuentran en mi repositorio de GitHub:
+# GitHub:
 
 https://github.com/belzo19/PF-Belsito
 
